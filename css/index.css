@@ -1,0 +1,60 @@
+body
+{
+  background-image: url(https://i.ibb.co/MB0X19J/cristiano-firmani-tm-Tidmp-ILWw-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p
+{
+  font-family: cursive;
+  font-size: 20px;
+  color: white;
+}
+
+a
+{
+  font-family: serif;
+  font-size: 20px;
+  color: white;
+}
+
+h1
+{
+  font-family: fantasy;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+h2
+{
+  font-family: cursive;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+#main-footer
+{
+  background: black;
+}
+#insta
+{
+  height: 50px;
+  width: 50px;
+}
+#fb
+{
+  height: 65px;
+  width: 65px;
+}
+#git
+{
+  height: 63px;
+  width: 63px;
+}
+#twitter
+{
+  height: 55px;
+  width: 55px;
+}

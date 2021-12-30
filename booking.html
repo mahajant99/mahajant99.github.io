@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/pro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style type="text/css">
+      body
+      {
+        background-image: url(https://wallpapercave.com/wp/wp6621664.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class='navbar navbar-expand-sm navbar-dark bg-dark'>
+      <div class="container">
+
+        <p class='navbar-brand'>GraphicTech</p>
+
+        <div class="collapse navbar-collapse" id='navbarCollapse'>
+          <ul class='navbar-nav ml-auto'>
+
+            <li class='nav-item'>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class='nav-item'>
+              <a href="processor.html" class="nav-link">Processors</a>
+            </li>
+            <li class='nav-item'>
+              <a href="graphic_card.html" class="nav-link">Graphic Cards</a>
+            </li>
+            <li class='nav-item'>
+              <a href="accessories.html" class="nav-link">Accessories</a>
+            </li>
+            <li class='nav-item active'>
+              <a href="booking.html" class="nav-link">Booking</a>
+            </li>
+            <li class='nav-item'>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+       </div>
+
+      </div>
+    </nav>
+
+        <br>
+
+        <center>
+          <h1>Book Your Order Here</h1>
+
+              <div class="col-md-4">
+                <div class="card p-4">
+                    <h2>Personal Details</h2>
+                    <br>
+                    <p>
+                      Name: <font color="red">* </font><input type="text" id="name" placeholder="Full Name">
+                      <br><br>
+                      Email ID: <font color="red">* </font><input type="text" id="email" placeholder="Email ID">
+                      <br><br>
+                      Phone Number: <font color="red">* </font><input type="text" id="number" placeholder="Phone Number (with STD code)">
+                      <br><br>
+                      Address: <font color="red">* </font><textarea id="address" placeholder="Address"></textarea>                  
+                      <br>
+                    </p>
+                </div>
+              </div>
+
+              <br>
+
+              <div class="col-md-6">
+                <div class="card p-4">
+                  <h2>Order Details</h2>
+                  <br>
+                  <p>
+                    Processor:
+                    <select id="operation1" name="operation1">
+                      <option value="NA">Select option</option>
+                      <option value="Intel Core i9-12900K">Intel Core i9-12900K</option>
+                      <option value="Intel Core i7-11700F">Intel Core i7-11700F</option>
+                      <option value="Intel Core i5-12600K">Intel Core i5-12600K</option>
+                      <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X</option>
+                      <option value="AMD Ryzen 7 5800X">AMD Ryzen 7 5800X</option>
+                      <option value="AMD Ryzen 5 5600X">AMD Ryzen 5 5600X</option>
+                    </select>
+                    <input type="number" id="Number1" placeholder="Number of Pieces" style="width:30%">
+                    <br>
+                    <button name="cart1" onclick="cart1()" style="width:20%">Add to Cart</button>
+                    <br>
+                    <a id="output1"></a><a id="output2"></a>
+
+                    <br><br>
+					
+                    Graphic Card:
+                    <select id="operation2" name="operation2">
+                      <option value="NA">Select option</option>
+                      <option value="Nvidia RTX 3090">Nvidia RTX 3090</option>
+                      <option value="Nvidia RTX 3080">Nvidia RTX 3080</option>
+                      <option value="Nvidia RTX 3070">Nvidia RTX 3070</option>
+                      <option value="Nvidia RTX 3060">Nvidia RTX 3060</option>
+                      <option value="Nvidia RTX 2080 Super">Nvidia RTX 2080 Super</option>
+                      <option value="Nvidia RTX 2070 Super">Nvidia RTX 2070 Super</option>
+                    </select>
+                    <input type="number" id="Number2" placeholder="Number of Pieces" style="width:30%">
+                    <br>
+                    <button name="cart2" onclick="cart2()" style="width:20%">Add to Cart</button>
+                    <br>
+                    <a id="output3"></a><a id="output4"></a>
+                    
+                    <br><br>
+
+                    Keyboard:
+                    <select id="operation3" name="operation3">
+                      <option value="NA">Select option</option>
+                      <option value="Logitech G PRO Mechanical">Logitech G PRO Mechanical</option>
+                      <option value="CORSAIR K70 RGB">CORSAIR K70 RGB</option>
+                      <option value="Razer BlackWidow V3">Razer BlackWidow V3</option>
+                    </select>
+                    <input type="number" id="Number3" placeholder="Number of Pieces" style="width:30%">
+                    <br>
+                    <button name="cart3" onclick="cart3()" style="width:20%">Add to Cart</button>
+                    <br>
+                    <a id="output5"></a><a id="output6"></a>
+					  
+                    <br><br>
+
+                    Mouse:
+                    <select id="operation4" name="operation4">
+                      <option value="NA">Select option</option>
+                      <option value="Redragon M602">Redragon M602</option>
+                      <option value="Razer Basilisk V3">Razer Basilisk V3</option>
+                      <option value="Logitech G502">Logitech G502</option>
+                    </select>
+                    <input type="number" id="Number4" placeholder="Number of Pieces" style="width:30%">
+                    <br>
+                    <button name="cart4" onclick="cart4()" style="width:20%">Add to Cart</button>
+                    <br>
+                    <a id="output7"></a><a id="output8"></a>
+					  
+                    <br>
+                  </p>
+                </div>
+              </div>
+			  
+			  <br><br>
+			  <p>
+			  <button name="check" class="button" onclick="check(); location.reload()" style="width:20%">Place Order</button>
+			  </p>
+        </center>
+		
+		<br>
+
+    <footer id='main-footer' class="text-center p-4">
+      <div class=" text-white col">
+        <a href="https://www.instagram.com/mahajant99/"><img src="https://i.ibb.co/3r95VRZ/sm-5b37de3263964-removebg-preview.png" id="insta"></a>
+        <a href="https://www.facebook.com/mahajant99/"><img src="https://i.ibb.co/27r3qyt/29227984-removebg-preview.png" id="fb" ></a>
+        <a href="https://github.com/mahajant99/"><img src="https://i.ibb.co/7zKyrvn/pngegg.png" id="git"></a>
+        <a href="https://twitter.com/mahajant99/"><img src="https://i.ibb.co/ZfnDTvr/pngegg-1.png" id="twitter"></a>
+        <p>Copyright &copy; mahajant99</p>
+      </div>
+    </footer>
+	  
+  <script src="js/booking.js"></script>
+
+  </body>
+</html>
